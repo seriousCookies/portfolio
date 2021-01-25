@@ -67,7 +67,7 @@ export const projectsData = [
 export const contactData = {
   cta: '',
   btn: '',
-  email: '',
+  email: 'na.wei@appliedtechnology.se',
 };
 
 // FOOTER DATA
