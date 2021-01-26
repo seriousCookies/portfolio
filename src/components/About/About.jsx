@@ -5,7 +5,7 @@ import Title from '../Title/Title';
 import AboutImg from '../Image/AboutImg';
 import PortfolioContext from '../../context/context';
 import naResume from '../../images/CV_Na_Wei.pdf'
-const About = () => {
+const TechStack = () => {
   const { about } = useContext(PortfolioContext);
   const { img, paragraphOne, paragraphTwo, paragraphThree } = about;
 
@@ -69,4 +69,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default TechStack;

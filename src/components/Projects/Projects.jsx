@@ -7,8 +7,9 @@ import Title from '../Title/Title';
 import ProjectImg from '../Image/ProjectImg';
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
-
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCode} from '@fortawesome/free-solid-svg-icons'
+import Timeline from '../Timeline/Timeline';
 
 const Projects = () => {
   const { projects } = useContext(PortfolioContext);
@@ -34,18 +35,17 @@ const Projects = () => {
           <VerticalTimeline>
 
           {projects.map((project) => {
-            const { title, info, info2, url, repo, img, id } = project;
+            const { title, info, info2, info3, url, repo, img, id } = project;
 
             return (
             <VerticalTimelineElement
             className="vertical-timeline-element--work"
             contentStyle={{ background: "#493240", color: '#fff' }}
             contentArrowStyle={{ borderRight: '7px solid  #493240' }}
-            iconStyle={{ background: "#493240", color: '#fff' }}
-            icon={<i class="fas fa-laptop-code"></i>}
+            iconStyle={{ background: "#493240", color: '#e3d0d8' }}
+            icon={<FontAwesomeIcon icon={faCode} size="2x" />}
           >
             <h3 className="text-uppercase vertical-timeline-element-title">{title}</h3>
-            <br/>
     <Col>
       <Fade
         left={isDesktop}
@@ -56,10 +56,35 @@ const Projects = () => {
       >
         <div className="project-wrapper__text">
           <div>
-            <h4>
-              {info || ""}</h4>
-            <h4 className="mb-4">{info2 || ''}</h4>
+            <p className= "font-italic"> {info || ""}</p>
+            <h3 className="mb-4">{info2 || ''}</h3>
           </div>
+          <a
+                        href={url || '#!'}
+                        target="_blank"
+                        aria-label="Project Link"
+                        rel="noopener noreferrer"
+                      >
+          <Tilt
+                          options={{
+                            reverse: false,
+                            max: 8,
+                            perspective: 1000,
+                            scale: 1,
+                            speed: 300,
+                            transition: true,
+                            axis: null,
+                            reset: true,
+                            easing: 'cubic-bezier(.03,.98,.52,.99)',
+                          }}
+                        >
+                          <div data-tilt className="thumbnail rounded">
+                            <ProjectImg alt={title} filename={img} />
+                          </div>
+                        </Tilt>
+                        </a>
+                        <br/>
+                        <p>Built with {info3}</p>
           {repo && (
             <a
               target="_blank"
