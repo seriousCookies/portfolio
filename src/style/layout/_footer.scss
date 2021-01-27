@@ -58,7 +58,7 @@
   }
 }
 
-.back-to-top i {
+.nav-to-section i {
   color: $white-color;
   margin: 1rem 0 $default-font-size;
   transition: all 0.2s ease-in;
@@ -73,6 +73,7 @@
   color: darken(white, 50%);
   transition: all 0.4s;
   display: inline-block;
+  cursor: pointer;
 
   &:hover,
   &:active {

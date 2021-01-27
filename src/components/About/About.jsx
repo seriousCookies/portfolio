@@ -5,6 +5,7 @@ import Title from '../Title/Title';
 import AboutImg from '../Image/AboutImg';
 import PortfolioContext from '../../context/context';
 import naResume from '../../images/CV_Na_Wei.pdf'
+import NextSection from '../NextSection/NextSection';
 const TechStack = () => {
   const { about } = useContext(PortfolioContext);
   const { img, paragraphOne, paragraphTwo, paragraphThree } = about;
@@ -48,13 +49,13 @@ const TechStack = () => {
                 <p className="about-wrapper__info-text">
                   {paragraphThree || ''}
                 </p>
-                { (
+                {(
                   <span className="d-flex mt-3">
                     <a
                       target="_blank"
                       rel="noopener noreferrer"
                       className="cta-btn cta-btn--resume"
-                      href= {naResume}
+                      href={naResume}
                     >
                       Resume
                     </a>
@@ -65,6 +66,7 @@ const TechStack = () => {
           </Col>
         </Row>
       </Container>
+      <NextSection section={"techskills"} />
     </section>
   );
 };

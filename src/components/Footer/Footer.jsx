@@ -3,7 +3,7 @@ import { Container } from 'react-bootstrap';
 import { Link } from 'react-scroll';
 import PortfolioContext from '../../context/context';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHeart} from '@fortawesome/free-solid-svg-icons'
+import { faHeart } from '@fortawesome/free-solid-svg-icons'
 
 const Footer = () => {
   const { footer } = useContext(PortfolioContext);
@@ -12,7 +12,7 @@ const Footer = () => {
   return (
     <footer className="footer navbar-static-bottom">
       <Container>
-        <span className="back-to-top">
+        <span className="nav-to-section">
           <Link to="hero" smooth duration={1000}>
             <i className="fa fa-angle-up fa-2x" aria-hidden="true" />
           </Link>
@@ -36,7 +36,7 @@ const Footer = () => {
         </div>
         <hr />
         <p className="footer__text">
-           {new Date().getFullYear()} -  Made with {<FontAwesomeIcon icon={faHeart} color="#ff0099" size="2x" />} By{' '}
+          {new Date().getFullYear()} -  Made with {<FontAwesomeIcon icon={faHeart} color="#ff0099" size="2x" />} By{' '}
           <a href="https://github.com/seriousCookies" target="_blank" rel="noopener noreferrer">
             Na Wei
           </a>
