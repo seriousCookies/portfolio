@@ -9,7 +9,7 @@ import Footer from './Footer/Footer';
 import { PortfolioProvider } from '../context/context';
 
 import { heroData, aboutData, techData, projectsData, contactData, footerData } from '../data/data';
-
+import PageNavbar from './PageNavbar/PageNavbar';
 
 function App() {
   const [hero, setHero] = useState({});
@@ -22,7 +22,7 @@ function App() {
   useEffect(() => {
     setHero({ ...heroData });
     setAbout({ ...aboutData });
-    setTech({ ...techData })
+    setTech({ ...techData });
     setProjects([...projectsData]);
     setContact({ ...contactData });
     setFooter({ ...footerData });
@@ -30,7 +30,7 @@ function App() {
 
   return (
     <PortfolioProvider value={{ hero, about, tech, projects, contact, footer }}>
-
+      <PageNavbar />
       <Hero />
       <About />
       <Projects />
