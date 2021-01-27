@@ -83,8 +83,9 @@ const Projects = () => {
                           </div>
                         </Tilt>
                         </a>
-                        <br/>
+                        
                         <p>Built with {info3}</p>
+                        <br/>
           {repo && (
             <a
               target="_blank"

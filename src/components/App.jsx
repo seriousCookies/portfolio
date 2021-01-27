@@ -11,7 +11,6 @@ import { PortfolioProvider } from '../context/context';
 import { heroData, aboutData, techData, projectsData,  contactData, footerData } from '../data/data';
 
 
-
 function App() {
   const [hero, setHero] = useState({});
   const [about, setAbout] = useState({});
@@ -31,6 +30,7 @@ function App() {
 
   return (
     <PortfolioProvider value={{ hero, about, tech, projects, contact, footer }}>
+
       <Hero />
       <About />
       <TechStack/>

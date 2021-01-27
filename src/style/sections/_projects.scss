@@ -1,8 +1,7 @@
 #projects {
   background-color: #e3d0d8;
   color: $dark-blue-text;
-
-  padding-top: 15rem;
+  padding-top: 10rem;
 
   @include respond(tab-land) {
     margin-top: 0;

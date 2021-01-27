@@ -36,7 +36,7 @@ const Footer = () => {
         </div>
         <hr />
         <p className="footer__text">
-           {new Date().getFullYear()} -  Made with {<FontAwesomeIcon icon={faHeart} size="2x" />} By{' '}
+           {new Date().getFullYear()} -  Made with {<FontAwesomeIcon icon={faHeart} color="#ff0099" size="2x" />} By{' '}
           <a href="https://github.com/seriousCookies" target="_blank" rel="noopener noreferrer">
             Na Wei
           </a>

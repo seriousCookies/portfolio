@@ -20,7 +20,9 @@
   /* background: url("/src/assets/[your-image].png");
   background-position: center;
   background-size: cover; */
-
+  #navAbout {
+    padding: 1rem 0rem;
+  }
   @include respond(phone) {
     padding: 0rem $default-font-size;
   }

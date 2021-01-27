@@ -68,3 +68,14 @@
     transform: translateY(-2px);
   }
 }
+
+.navbar-brand a {
+  color: darken(white, 50%);
+  transition: all 0.4s;
+  display: inline-block;
+
+  &:hover,
+  &:active {
+    color: $primary-color;
+  }
+}

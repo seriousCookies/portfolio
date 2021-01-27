@@ -43,6 +43,16 @@ export const techData = {
 export const projectsData = [
   {
     id: nanoid(),
+    img: 'website',
+    title: 'This Website',
+    info: 'Hobby project',
+    info2: `my website portfolio`,
+    info3: 'React, Gatsby',
+    url: '',
+    repo: 'https://github.com/seriousCookies/portfolio', // if no repo, the button will not show up
+  },
+  {
+    id: nanoid(),
     img: 'expo-QR-code.png',
     title: 'Meny food scanner',
     info: 'Hobby project',
