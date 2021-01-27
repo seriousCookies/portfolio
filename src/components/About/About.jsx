@@ -66,7 +66,7 @@ const TechStack = () => {
           </Col>
         </Row>
       </Container>
-      <NextSection section={"techskills"} />
+      <NextSection section={"projects"} />
     </section>
   );
 };

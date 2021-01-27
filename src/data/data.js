@@ -32,7 +32,6 @@ export const aboutData = {
 };
 
 export const techData = {
-  languages: `Javascript`,
   frontend: `ReactJS, ReduxJS, React Native, HTML5, CSS3/SASS, Bootstrap/MaterialUI
   `,
   backend: 'NodeJS/ExpressJS, REST/GraphQL, Apollo, Firebase, PostgreSQL/MongoDB',

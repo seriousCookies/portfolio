@@ -45,7 +45,6 @@ const TechStack = () => {
           ))}
         </Row>
       </Container>
-      <NextSection section={"projects"} />
     </section>
   );
 };
