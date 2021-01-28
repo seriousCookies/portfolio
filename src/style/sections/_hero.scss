@@ -15,7 +15,7 @@
   right: 0;
   z-index: -1;
 
-  // If you want to set a background image on the hero section, uncomment these with yout custom image
+  // setting an image
 
   /* background: url("/src/assets/[your-image].png");
   background-position: center;
@@ -43,9 +43,11 @@
     @include respond(phone) {
       font-size: 3.5rem;
       line-height: 1.5;
+      color: $primary-color;
     }
     @include respond(phone-xs) {
       font-size: 2.8rem;
+      color: $primary-color;
     }
   }
 

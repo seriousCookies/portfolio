@@ -75,7 +75,7 @@ export const projectsData = [
     id: nanoid(),
     img: 'foodFinder.png',
     title: 'MVP Recipe Finder',
-    info: 'Hackday project-Express.js, React, REST API',
+    info: 'Hackday project',
     info2: 'Recipe finder with filter options for dietary preferences and allergies.',
     info3: 'Expressjs, React, REST API',
     url: 'https://recipe-finder-mvp.herokuapp.com/',

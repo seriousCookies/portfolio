@@ -21,7 +21,7 @@ const Contact = () => {
               target="_blank"
               rel="noopener noreferrer"
               className="cta-btn cta-btn--resume"
-              href={email ? `mailto:${email}` : "https://github.com/seriousCookies/portfolio"}
+              href={email ? `mailto:${email}` : 'https://github.com/seriousCookies/portfolio'}
             >
               {btn || "Let's Chat"}
             </a>

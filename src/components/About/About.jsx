@@ -4,7 +4,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import Title from '../Title/Title';
 import AboutImg from '../Image/AboutImg';
 import PortfolioContext from '../../context/context';
-import naResume from '../../images/CV_Na_Wei.pdf'
+import naResume from '../../images/CV_Na_Wei.pdf';
 import NextSection from '../NextSection/NextSection';
 const TechStack = () => {
   const { about } = useContext(PortfolioContext);
@@ -38,18 +38,10 @@ const TechStack = () => {
           <Col md={6} sm={12}>
             <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
               <div className="about-wrapper__info">
-                <p className="about-wrapper__info-text">
-                  {paragraphOne ||
-                    ""}
-                </p>
-                <p className="about-wrapper__info-text">
-                  {paragraphTwo ||
-                    ""}
-                </p>
-                <p className="about-wrapper__info-text">
-                  {paragraphThree || ''}
-                </p>
-                {(
+                <p className="about-wrapper__info-text">{paragraphOne || ''}</p>
+                <p className="about-wrapper__info-text">{paragraphTwo || ''}</p>
+                <p className="about-wrapper__info-text">{paragraphThree || ''}</p>
+                {
                   <span className="d-flex mt-3">
                     <a
                       target="_blank"
@@ -60,13 +52,13 @@ const TechStack = () => {
                       Resume
                     </a>
                   </span>
-                )}
+                }
               </div>
             </Fade>
           </Col>
         </Row>
       </Container>
-      <NextSection section={"projects"} />
+      <NextSection section={'projects'} />
     </section>
   );
 };

@@ -25,19 +25,17 @@ const TechStack = () => {
     <section id="techskills">
       <Container>
         <Title title="Tech Skills" />
-        <Row className="about-wrapper">
-          {Object.keys(tech).map(key => (
+        <Row className="project-wrapper">
+          {Object.keys(tech).map((key) => (
             <Col md={4} sm={8}>
               <Fade bottom duration={1000} delay={600} distance="30px">
-                <h3 className="text-uppercase">{key}</h3>
+                <h3 className="font-weight-bold text-uppercase">{key}</h3>
                 <br />
               </Fade>
               <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
-                <div className="about-wrapper__info">
+                <div className="project-wrapper__info">
                   <p className="text-center">
-                    {tech[key] && tech[key].split(',').map(i =>
-                      <p>{i}</p>
-                    ) || ''}
+                    {(tech[key] && tech[key].split(',').map((i) => <p>{i}</p>)) || ''}
                   </p>
                 </div>
               </Fade>

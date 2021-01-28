@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 import { Link } from 'react-scroll';
 
@@ -9,7 +9,7 @@ const NextSection = ({ section }) => {
         <i className="fa fa-angle-down fa-2x" aria-hidden="true" />
       </Link>
     </span>
-  )
-}
+  );
+};
 
-export default NextSection
+export default NextSection;

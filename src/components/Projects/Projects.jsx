@@ -7,8 +7,8 @@ import Title from '../Title/Title';
 import ProjectImg from '../Image/ProjectImg';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCode } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCode } from '@fortawesome/free-solid-svg-icons';
 
 const Projects = () => {
   const { projects } = useContext(PortfolioContext);
@@ -32,16 +32,15 @@ const Projects = () => {
         <div className="project-wrapper">
           <Title title="Projects" />
           <VerticalTimeline>
-
             {projects.map((project) => {
               const { title, info, info2, info3, url, repo, img, id } = project;
 
               return (
                 <VerticalTimelineElement
                   className="vertical-timeline-element--work"
-                  contentStyle={{ background: "#493240", color: '#fff' }}
+                  contentStyle={{ background: '#493240', color: '#fff' }}
                   contentArrowStyle={{ borderRight: '7px solid  #493240' }}
-                  iconStyle={{ background: "#493240", color: '#e3d0d8' }}
+                  iconStyle={{ background: '#493240', color: '#e3d0d8' }}
                   icon={<FontAwesomeIcon icon={faCode} size="2x" />}
                 >
                   <h3 className="text-uppercase vertical-timeline-element-title">{title}</h3>
@@ -55,7 +54,7 @@ const Projects = () => {
                     >
                       <div className="project-wrapper__text">
                         <div>
-                          <p className="font-italic"> {info || ""}</p>
+                          <p className="font-italic"> {info || ''}</p>
                           <h3 className="mb-4">{info2 || ''}</h3>
                         </div>
                         <a
@@ -82,8 +81,8 @@ const Projects = () => {
                             </div>
                           </Tilt>
                         </a>
-
-                        <p>Built with {info3}</p>
+                        <br />
+                        <h5>Built with {info3}</h5>
                         <br />
                         {repo && (
                           <a
@@ -98,7 +97,8 @@ const Projects = () => {
                       </div>
                     </Fade>
                   </Col>
-                </VerticalTimelineElement>)
+                </VerticalTimelineElement>
+              );
             })}
           </VerticalTimeline>
         </div>
@@ -108,5 +108,3 @@ const Projects = () => {
 };
 
 export default Projects;
-
-
