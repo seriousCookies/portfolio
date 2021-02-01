@@ -42,6 +42,16 @@ export const techData = {
 export const projectsData = [
   {
     id: nanoid(),
+    img: 'chatroom',
+    title: 'Firebase Chatroom',
+    info: 'Hobby project',
+    info2: `Live chatroom with separate rooms`,
+    info3: 'React, Firebase',
+    url: 'https://my-first-firebase-8edd4.web.app/',
+    repo: 'https://github.com/seriousCookies/my-firebase-app', // if no repo, the button will not show up
+  },
+  {
+    id: nanoid(),
     img: 'website',
     title: 'This Website',
     info: 'Hobby project',
