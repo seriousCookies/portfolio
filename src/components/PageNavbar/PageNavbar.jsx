@@ -27,13 +27,13 @@ const PageNavbar = () => {
           </Link>
         </Navbar.Brand>
         <Navbar.Brand>
-          <Link to="techskills" smooth duration={1000}>
-            Tech Skills |
+          <Link to="projects" smooth duration={1000}>
+            Projects |
           </Link>
         </Navbar.Brand>
         <Navbar.Brand>
-          <Link to="projects" smooth duration={1000}>
-            Projects |
+          <Link to="techskills" smooth duration={1000}>
+            Tech Skills |
           </Link>
         </Navbar.Brand>
         <Navbar.Brand>

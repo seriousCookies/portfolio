@@ -43,7 +43,9 @@ const Projects = () => {
                   iconStyle={{ background: '#493240', color: '#e3d0d8' }}
                   icon={<FontAwesomeIcon icon={faCode} size="2x" />}
                 >
-                  <h3 className="text-uppercase vertical-timeline-element-title">{title}</h3>
+                  <h3 className=" mt-4 font-weight-bold text-uppercase vertical-timeline-element-title">
+                    {title}
+                  </h3>
                   <Col>
                     <Fade
                       left={isDesktop}
@@ -52,10 +54,10 @@ const Projects = () => {
                       delay={500}
                       distance="30px"
                     >
-                      <div className="project-wrapper__text">
+                      <div className="p-3">
                         <div>
-                          <p className="font-italic"> {info || ''}</p>
-                          <h3 className="mb-4">{info2 || ''}</h3>
+                          <h5 className=" pb-4 text-center font-italic"> {info || ''}</h5>
+                          <h3 className="text-left mb-4">{info2 || ''}</h3>
                         </div>
                         <a
                           href={url || '#!'}
@@ -81,9 +83,7 @@ const Projects = () => {
                             </div>
                           </Tilt>
                         </a>
-                        <br />
-                        <h5>Built with {info3}</h5>
-                        <br />
+                        <h5 className="my-4 text-left ">Built with {info3}</h5>
                         {repo && (
                           <a
                             target="_blank"
