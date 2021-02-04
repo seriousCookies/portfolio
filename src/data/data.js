@@ -55,7 +55,7 @@ export const projectsData = [
     img: 'website',
     title: 'This Website',
     info: 'Hobby project',
-    info2: `my website portfolio`,
+    info2: `My website portfolio`,
     info3: 'React, Gatsby',
     url: '',
     repo: 'https://github.com/seriousCookies/portfolio', // if no repo, the button will not show up
