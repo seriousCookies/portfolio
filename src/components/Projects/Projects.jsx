@@ -38,9 +38,9 @@ const Projects = () => {
               return (
                 <VerticalTimelineElement
                   className="vertical-timeline-element--work"
-                  contentStyle={{ background: '#c51162', color: '#fff' }}
-                  contentArrowStyle={{ borderRight: '7px solid  #c51162' }}
-                  iconStyle={{ background: '#c51162', color: '#e3d0d8' }}
+                  contentStyle={{ background: '#493240', color: '#fff' }}
+                  contentArrowStyle={{ borderRight: '7px solid  #493240' }}
+                  iconStyle={{ background: '#493240', color: '#e3d0d8' }}
                   icon={<FontAwesomeIcon icon={faCode} size="2x" />}
                 >
                   <h3 className=" mt-4 font-weight-bold text-uppercase vertical-timeline-element-title">
