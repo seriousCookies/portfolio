@@ -42,13 +42,23 @@ export const techData = {
 export const projectsData = [
   {
     id: nanoid(),
+    img: 'shoppingList',
+    title: 'Angular Shopping List',
+    info: 'Learning Angular',
+    info2: `Learning Angular, typescript, CI/CD`,
+    info3: 'Angular, AWS',
+    url: 'http://angularshoppinglist.s3-website.eu-north-1.amazonaws.com/',
+    repo: 'https://github.com/seriousCookies/angular-shoppingList',
+  },
+  {
+    id: nanoid(),
     img: 'chatroom',
     title: 'Firebase Chatroom',
     info: 'Hobby project',
     info2: `Live chatroom with separate rooms`,
     info3: 'React, Firebase',
     url: 'https://my-first-firebase-8edd4.web.app/',
-    repo: 'https://github.com/seriousCookies/my-firebase-app', // if no repo, the button will not show up
+    repo: 'https://github.com/seriousCookies/my-firebase-app',
   },
   {
     id: nanoid(),
@@ -58,7 +68,7 @@ export const projectsData = [
     info2: `My website portfolio`,
     info3: 'React, Gatsby',
     url: '',
-    repo: 'https://github.com/seriousCookies/portfolio', // if no repo, the button will not show up
+    repo: 'https://github.com/seriousCookies/portfolio',
   },
   {
     id: nanoid(),
@@ -68,7 +78,7 @@ export const projectsData = [
     info2: `Scan Meny food items to find healthier alternatives`,
     info3: 'React Native, GraphQL, MongoDB, Webscrapping',
     url: 'https://github.com/seriousCookies/foodFinder',
-    repo: 'https://github.com/seriousCookies/foodFinder', // if no repo, the button will not show up
+    repo: 'https://github.com/seriousCookies/foodFinder',
   },
   {
     id: nanoid(),
@@ -79,7 +89,7 @@ export const projectsData = [
       'Live stream, centralised platform, allowing businesses to track their current venue capacity',
     info3: 'Apollo, React,GraphQL, Firebase',
     url: 'https://fierce-retreat-29938.herokuapp.com/index.html',
-    repo: 'https://github.com/seriousCookies/koe_project', // if no repo, the button will not show up
+    repo: 'https://github.com/seriousCookies/koe_project',
   },
   {
     id: nanoid(),
