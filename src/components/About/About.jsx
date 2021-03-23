@@ -4,7 +4,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import Title from '../Title/Title';
 import AboutImg from '../Image/AboutImg';
 import PortfolioContext from '../../context/context';
-import naResume from '../../images/CV_Na_Wei.pdf';
+import naResume from '../../images/Na_Wei_Web_Developer_Resume.pdf';
 import NextSection from '../NextSection/NextSection';
 const TechStack = () => {
   const { about } = useContext(PortfolioContext);
