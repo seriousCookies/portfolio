@@ -28,7 +28,7 @@ export const aboutData = {
   full-stack Javascript web developer.
   `,
   paragraphThree: '',
-  resume: '', // if no resume, the button will not show up
+  resume: 'Na_Wei_WebDeveloper_Resume.pdf', // if no resume, the button will not show up
 };
 
 export const techData = {
