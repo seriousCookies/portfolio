@@ -6,7 +6,7 @@ https://na-wei-portfolio.netlify.app
   </p>
 
 ### About The Project
-My personal portfolio. I decided to build this portfolio as a way to display some of my past projects as well as some of the ones I am currently working on. I chose to use Gatsby as a simple and fast way to build this portfolio and to continue developing my skills in React
+My personal portfolio. I decided to build this portfolio as a way to display some of my past projects as well as some of the ones I am currently working on. I chose to use Gatsby as a simple and fast way to build this portfolio and to continue developing my skills in React.
 
 
 ### Built With
