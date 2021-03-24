@@ -1,9 +1,7 @@
-work-in-progress
-https://na-wei-portfolio.netlify.app
 <!-- ABOUT THE PROJECT -->
   <h2 align="center">My Portfolio</h2>
   <p align="center">
-<a href="https://na-wei-portfolio.netlify.app" target="_blank"> <img src="images\foodFinder.png" alt="screenshot"> </a>
+<a href="https://na-wei-portfolio.netlify.app" target="_blank"> <img src="images\portfolio.png" alt="screenshot"> </a>
 https://na-wei-portfolio.netlify.app
   </p>
 
