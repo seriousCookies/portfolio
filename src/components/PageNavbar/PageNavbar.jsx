@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Navbar, Nav, Container, Row } from 'react-bootstrap';
+import { Navbar } from 'react-bootstrap';
 import { Link } from 'react-scroll';
 
 import Fade from 'react-reveal/Fade';
