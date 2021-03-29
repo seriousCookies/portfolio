@@ -19,26 +19,29 @@ const PageNavbar = () => {
   }, []);
 
   return (
-    <Navbar className="d-flex justify-content-end" id="pageNavBar" expand="lg">
+    <Navbar className="d-flex" id="pageNavBar" expand="lg">
       <Fade right={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
         <Navbar.Brand>
           <Link to={isMobile ? 'about' : 'navAbout'} smooth duration={1000}>
-            About |
+            About
           </Link>
         </Navbar.Brand>
+        <Navbar.Brand>|</Navbar.Brand>
         <Navbar.Brand>
           <Link to="projects" smooth duration={1000}>
-            Projects |
+            Projects
           </Link>
         </Navbar.Brand>
+        <Navbar.Brand>|</Navbar.Brand>
         <Navbar.Brand>
           <Link to="techskills" smooth duration={1000}>
-            Tech Skills |
+            Tech Skills
           </Link>
         </Navbar.Brand>
+        <Navbar.Brand>|</Navbar.Brand>
         <Navbar.Brand>
           <Link to="contact" smooth duration={1000}>
-            Contact |
+            Contact
           </Link>
         </Navbar.Brand>
       </Fade>
