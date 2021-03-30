@@ -1,20 +1,10 @@
-#pageNavBar {
-  background: rgba(255, 255, 255, 1);
-  flex-flow: row wrap;
-  justify-content: flex-end;
-
-  @include respond(phone) {
-    justify-content: flex-start;
-  }
-}
-
 #hero {
   min-height: 100vh;
   height: 100vh;
   display: flex;
   align-items: center;
   border-bottom: 0px;
-  background: rgba(255, 255, 255, 0.7);
+  background: $white-color;
   font-weight: 400;
   color: $dark-blue-text;
   padding: 0rem 5.6rem;
@@ -25,23 +15,9 @@
   right: 0;
   z-index: -1;
 
-  video {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -100;
-    -ms-transform: translateX(-50%) translateY(-50%);
-    -moz-transform: translateX(-50%) translateY(-50%);
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
-    background-size: cover;
-  }
+  // setting an image
 
-  /* background: url("/src/image/cherry_blossoms.mp4");
+  /* background: url("/src/assets/[your-image].png");
   background-position: center;
   background-size: cover; */
   #navAbout {
