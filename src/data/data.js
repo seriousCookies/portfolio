@@ -107,7 +107,7 @@ export const projectsData = [
 export const contactData = {
   cta: '',
   btn: '',
-  email: 'na.wei@appliedtechnology.se',
+  email: 'wei.na2910@gmail.com',
 };
 
 // FOOTER DATA
