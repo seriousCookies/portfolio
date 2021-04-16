@@ -7,7 +7,7 @@ import Contact from './Contact/Contact';
 import Footer from './Footer/Footer';
 
 import { PortfolioProvider } from '../context/context';
-
+import DarkMode from './theme/DarkMode';
 import { heroData, aboutData, techData, projectsData, contactData, footerData } from '../data/data';
 import PageNavbar from './PageNavbar/PageNavbar';
 
@@ -30,6 +30,7 @@ function App() {
 
   return (
     <PortfolioProvider value={{ hero, about, tech, projects, contact, footer }}>
+      <DarkMode />
       <PageNavbar />
       <Hero />
       <About />
