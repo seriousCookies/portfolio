@@ -35,18 +35,24 @@ a:hover {
 }
 
 .dark-blue-text {
-  color: $dark-blue-text !important;
+  color: $dark-blue !important;
 }
 
 .text-color-main {
   background-image: linear-gradient(135deg, $primary-color 0%, $secondary-color 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  .dark-mode & {
+    background-image: linear-gradient(135deg, $primary-color 0%, $dark-mode-pink 100%);
+  }
 
   // Responsive text purple style
   @include respond(phone) {
     background-image: none;
     -webkit-text-fill-color: $secondary-color;
+    .dark-mode & {
+      -webkit-text-fill-color: $dark-mode-light-pink;
+    }
   }
 
   &:hover {

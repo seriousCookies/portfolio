@@ -1,0 +1,23 @@
+#pageNavBar {
+  background-color: $white-color;
+
+  .navbar-brand a {
+    color: darken(white, 50%);
+
+    transition: all 0.4s;
+    display: inline-block;
+    cursor: pointer;
+
+    &:hover,
+    &:active {
+      color: $primary-color;
+    }
+  }
+  .dark-mode & {
+    color: $dark-mode-light-pink;
+    background-color: $dark-blue;
+    a {
+      color: $white-color;
+    }
+  }
+}

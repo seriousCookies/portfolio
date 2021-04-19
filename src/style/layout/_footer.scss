@@ -34,6 +34,9 @@
     width: 50%;
     border-top: 2px solid rgba(255, 255, 255, 0.1);
   }
+  .dark-mode & {
+    background-color: $dark-blue;
+  }
 }
 
 .social-links {
@@ -66,17 +69,5 @@
 
   &:hover {
     transform: translateY(-2px);
-  }
-}
-
-.navbar-brand a {
-  color: darken(white, 50%);
-  transition: all 0.4s;
-  display: inline-block;
-  cursor: pointer;
-
-  &:hover,
-  &:active {
-    color: $primary-color;
   }
 }

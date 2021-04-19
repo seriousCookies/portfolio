@@ -23,7 +23,10 @@
 
 /* Hero Style */
 .cta-btn--hero {
-  background-image: linear-gradient(135deg, $primary-color 0%, $secondary-color 100%);
+  background-image: linear-gradient(135deg, $primary-color 0%, $dark-mode-pink 100%);
+  .dark-mode & {
+    background-image: linear-gradient(135deg, $primary-color 0%, $dark-mode-pink 100%);
+  }
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   border-width: 2px;
@@ -36,10 +39,15 @@
     background-image: none;
     border: 2px solid $secondary-color;
     -webkit-text-fill-color: $secondary-color;
+    .dark-mode & {
+      border: 2px solid $dark-mode-light-pink;
+      -webkit-text-fill-color: $dark-mode-light-pink;
+    }
   }
 
   &::after {
     background-image: linear-gradient(135deg, $primary-color 0%, $secondary-color 100%);
+
     // Responsive Button hero style
     @include respond(phone) {
       background-image: none;
@@ -49,6 +57,9 @@
   &:hover {
     -webkit-text-fill-color: $white-color;
     text-decoration: none;
+    .dark-mode & {
+      -webkit-text-fill-color: $dark-mode-light-pink;
+    }
     // Responsive Button hover hero style
     @include respond(phone) {
       -webkit-text-fill-color: $secondary-color;
@@ -77,9 +88,26 @@
       width: 100%;
     }
   }
-}
+  .dark-mode & {
+    color: $dark-mode-light-pink;
+    border: 2px solid $dark-mode-light-pink;
 
-/* Arrow Button */
-.up i {
-  color: #272727;
+    &::after {
+      background: $dark-mode-light-pink;
+    }
+
+    &:hover {
+      color: $dark-mode-pink;
+      text-decoration: none;
+
+      &::after {
+        width: 100%;
+      }
+    }
+  }
+
+  /* Arrow Button */
+  .up i {
+    color: #272727;
+  }
 }
