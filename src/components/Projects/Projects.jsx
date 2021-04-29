@@ -1,17 +1,19 @@
 import React, { useContext, useEffect, useState } from 'react';
 import Fade from 'react-reveal/Fade';
 import Tilt from 'react-tilt';
-import { Container, Row, Col } from 'react-bootstrap';
-import PortfolioContext from '../../context/context';
+import { Container, Col } from 'react-bootstrap';
+import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
+import { faCode } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import PortfolioContext, { ThemeContext } from '../../context/context';
+
 import Title from '../Title/Title';
 import ProjectImg from '../Image/ProjectImg';
-import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCode } from '@fortawesome/free-solid-svg-icons';
 
 const Projects = () => {
   const { projects } = useContext(PortfolioContext);
+  const { darkTheme } = useContext(ThemeContext);
 
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -26,6 +28,18 @@ const Projects = () => {
     }
   }, []);
 
+  const timelineStyles = {
+    light: {
+      content: { background: '#c51162', color: '#fff' },
+      contentArrow: { borderRight: '7px solid  #c51162' },
+      icon: { background: '#c51162', color: '#fff' },
+    },
+    dark: {
+      content: { background: '#80004d', color: '#ffe0f3' },
+      contentArrow: { borderRight: '7px solid  #80004d' },
+      icon: { background: '#80004d', color: '#ffe0f3' },
+    },
+  };
   return (
     <section id="projects">
       <Container>
@@ -37,10 +51,11 @@ const Projects = () => {
 
               return (
                 <VerticalTimelineElement
+                  key={id}
                   className="vertical-timeline-element--work"
-                  contentStyle={{ background: '#c51162', color: '#fff' }}
-                  contentArrowStyle={{ borderRight: '7px solid  #c51162' }}
-                  iconStyle={{ background: '#c51162', color: '#fff' }}
+                  contentStyle={timelineStyles[darkTheme ? 'dark' : 'light'].content}
+                  contentArrowStyle={timelineStyles[darkTheme ? 'dark' : 'light'].contentArrow}
+                  iconStyle={timelineStyles[darkTheme ? 'dark' : 'light'].icon}
                   icon={<FontAwesomeIcon icon={faCode} size="2x" />}
                 >
                   <h3 className=" mt-4 font-weight-bold text-uppercase vertical-timeline-element-title">

@@ -47,7 +47,7 @@ export const projectsData = [
     info: 'Learning Angular',
     info2: `Learning Angular, typescript, CI/CD`,
     info3: 'Angular, AWS',
-    url: 'http://angularshoppinglist.s3-website.eu-north-1.amazonaws.com/',
+    url: 'https://github.com/seriousCookies/angular-shoppingList',
     repo: 'https://github.com/seriousCookies/angular-shoppingList',
   },
   {
